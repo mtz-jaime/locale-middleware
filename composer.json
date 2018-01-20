@@ -1,0 +1,33 @@
+{
+  "name": "mtz-jaime/locale-middleware",
+  "description": "This package will help you to localize your application depending from where a user is coming using geoIP, also offers the possibility to overwrite the default language provided via geoIP using a cookie.",
+  "keywords": [
+    "middleware",
+    "geoIP",
+    "locale",
+    "laravel"
+  ],
+  "authors": [
+    {
+      "name": "Jaime Martinez",
+      "email": "itit.jaime.martinez@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "geoip2/geoip2": "^2.3",
+    "guzzlehttp/guzzle": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "MtzJaime\\LocaleMiddleware\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "MtzJaime\\LocaleMiddleware\\LocaleMiddlewareServiceProvider"
+      ]
+    }
+  }
+}
